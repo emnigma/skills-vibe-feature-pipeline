@@ -4,7 +4,7 @@ description: Structure agent reasoning about consequential behavior with a model
 ---
 
 > Derived from [seqra/formal-spec](https://github.com/seqra/formal-spec), Apache License 2.0.
-> Modified by Max Nigmatulin, 2026: see `NOTICE.md` next to this file.
+> Modified by LLC "IITEKH", 2026: see `NOTICE.md` next to this file.
 
 ## Use in the feature pipeline
 
