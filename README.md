@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/icon.svg" alt="Feature Pipeline" width="128">
+</p>
+
 # Feature Pipeline
 
 A plugin that delivers a feature or an improvement from the owner's request to pull requests
