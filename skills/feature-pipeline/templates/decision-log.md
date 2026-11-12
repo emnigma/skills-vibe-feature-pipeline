@@ -6,9 +6,9 @@ decision gets a new entry that names the one it replaces.
 
 | # | Date | Author | Decision | Replaces | Spec criteria |
 |---|---|---|---|---|---|
-| 1 | YYYY-MM-DD | owner | Variant B: the item is edited in the main editor, not inline. | — | — |
-| 2 | YYYY-MM-DD | PM | Reorder by drag and drop only; keyboard reorder is out of scope. | — | R-8.x |
-| 3 | YYYY-MM-DD | owner | No paused badge in the list header; resume stays in the main button. | 1 | R-3.4–3.7 removed |
+| 1 | YYYY-MM-DD | owner | Variant B: the cart shows a summary panel, not a modal. | — | — |
+| 2 | YYYY-MM-DD | PM | Coupons apply one per order; stacking is out of scope. | — | C-4.x |
+| 3 | YYYY-MM-DD | owner | No separate "saved" badge; the save state stays in the main button. | 1 | C-2.3–2.5 removed |
 
 ## Open questions for the owner
 

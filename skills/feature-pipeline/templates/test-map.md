@@ -9,14 +9,14 @@ Levels, cheapest first: static rule, unit, component (headless UI), end-to-end.
 
 | Criterion | Test | Level | Purpose |
 |---|---|---|---|
-| R-6.1 | `EditTest.edit button opens the item in the editor` | component | the entry point exists |
-| R-6.3 | `QueueTest.edited item is not sent` | unit | the hold rule |
+| C-4.1 | `CouponTest.valid coupon lowers the total` | unit | the discount rule |
+| C-4.3 | `CartPanelTest.second coupon is rejected with a message` | component | the one-per-order rule is visible |
 
 ## Criteria with no new test
 
 | Criterion | Covered by |
 |---|---|
-| R-6.4 | an existing test on the base branch: `<name>` |
+| C-4.4 | an existing test on the base branch: `<name>` |
 
 ## Criteria with no test at all
 
