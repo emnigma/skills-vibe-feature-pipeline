@@ -1,7 +1,7 @@
 # Profile format
 
 The profile is `feature-pipeline.md` in the configuration folder the agent reads in the project
-(for example `.explyt/feature-pipeline.md` or `.veai/feature-pipeline.md`). It is committed with
+(`<config>/feature-pipeline.md`). It is committed with
 the project, so the project's specifics stay in the project. YAML front matter holds the slots;
 the Markdown body may add free-form notes for the roles.
 

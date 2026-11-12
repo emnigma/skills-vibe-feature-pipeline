@@ -6,7 +6,7 @@ result is a draft that the owner approves before the pipeline starts. The format
 
 ## 1. Find the configuration folder
 
-Use the folder the agent reads in this project (for example `.explyt/` or `.veai/`). If several
+Use the project configuration folder the agent reads (its agent documentation names it). If several
 exist, ask the owner which one.
 
 ## 2. Fill each slot

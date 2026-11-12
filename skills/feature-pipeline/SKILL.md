@@ -51,7 +51,7 @@ Files next to this one:
 ## Stage 0. Profile
 
 1. Find the profile: `feature-pipeline.md` in the configuration folder the agent reads in this
-   project (for example `.explyt/` or `.veai/`). If it is missing, follow `INSTALL.md`, show the
+   project (its agent documentation names it). If it is missing, follow `INSTALL.md`, show the
    draft to the owner, and continue only after approval.
 2. On every run, check the profile against the environment: every skill it names exists, every
    command it names runs (`--help` or a dry run is enough), every path exists. If a required entry
@@ -83,7 +83,7 @@ but the scope contract and the budget never are.
 ## Review rounds
 
 Plugins cannot ship workflows. Copy `templates/workflows/review-round/` into the project's
-temporary workflow folder (for example `.explyt/tmp-workflows/<feature>-review-rN/`), fill the
+temporary workflow folder (`<config>/tmp-workflows/<feature>-review-rN/`), fill the
 placeholders listed in its `README.md`, run `check_workflow` on it, fix every problem, then run it
 with `run_workflow`. Each round copies the previous folder and changes only the round number, the
 head, and the "what changed" text.

@@ -1,7 +1,7 @@
 # Review round workflow template
 
 Plugins cannot ship workflows, so the orchestrator copies this folder into the project's temporary
-workflow folder (for example `.explyt/tmp-workflows/<feature>-review-r<N>/`), replaces the
+workflow folder (`<config>/tmp-workflows/<feature>-review-r<N>/`), replaces the
 placeholders, runs `check_workflow` on the folder, fixes every problem, and runs it with
 `run_workflow`.
 
