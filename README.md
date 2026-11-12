@@ -10,7 +10,8 @@ It exists because agents left alone make the same mistakes on every larger task:
 - the implementation grows far past what similar changes cost;
 - tests grow into a second copy of the code;
 - review rounds layer fixes on fixes in one area;
-- a role that should only design starts deciding product behaviour.
+- a role that should only design starts deciding product behaviour;
+- reports state guesses as facts, and owner instructions get lost between stages.
 
 The pipeline guards against each of these with a written rule.
 
@@ -26,24 +27,27 @@ The pipeline guards against each of these with a written rule.
 | QA | the test set, levels, test cuts | spec changes (→ PM) | architect, PM |
 | Review (workflow) | nothing: reports findings | fixes | orchestrator |
 
-Every behaviour decision goes into a decision log with its author. Code that implements behaviour
-with no log entry does not pass.
+Every behaviour decision and every owner instruction goes into a log with its author. Code that
+implements behaviour with no log entry does not pass. External actions (comments, issues, pushes to
+shared branches) need the owner's explicit yes.
 
 ## Stages
 
 ★ — the owner decides before the pipeline goes on.
 
 0. Profile check (first run: build the profile, ★ approve).
-1. Intake: scope contract and a size budget from comparable merged changes. ★
+1. Intake: the task in one sentence with a done criterion, a scope contract and an expected size
+   from comparable merged changes. ★
 2. Research: competitors, UX patterns, an HTML demo with variants. ★ variant
 3. Spec. ★
 4. UI requirements.
-5. Design: reuse map, a lean pass before code, a formal model only for state machines or
-   concurrency. ★ if over budget
-6. Implementation in slices, every test tied to a criterion.
+5. Design: prior art, a minimal alternative, 2–3 variants, a reuse map, a lean pass before code, a
+   formal model only for state machines or concurrency. ★ if over the expected size
+6. Implementation in slices, every test tied to a criterion; for UI, screenshots of the key states
+   compared with the chosen variant.
 7. QA: test map, one test per criterion at the cheapest level.
 8. Review rounds with a base-branch filter and a step-back rule.
-9. Size audit against the budget. ★ cuts
+9. Size audit against the expected size. ★ cuts
 10. Pull requests by the project's layout. ★
 11. Demo videos, if the project has a demo skill. ★
 12. Owner feedback → decision log → back to the right stage.
@@ -71,12 +75,7 @@ Key rules:
 
 ## Install
 
-```sh
-veai plugin install feature-pipeline
-veai plugin enable feature-pipeline@0.1.0
-```
-
-Start a new session, then ask the agent to take an issue through the feature pipeline.
+Install the plugin from the catalog and enable it in the project. Start a new session, then ask the agent to take an issue through the feature pipeline.
 
 On the first run in a project, the orchestrator builds the project profile by `INSTALL.md`: it
 finds the project's rules file, checks, PR layout, spec folders and the skills that fit each slot,

@@ -8,7 +8,7 @@ Read-only investigation, no edits. Repository: <checkout>. Read <rules-file> fir
 
 The change on <branch> (measure `git diff <base-branch>...<head>`, without <scratch paths>) looks
 too big for what it delivers. Its capabilities: <one line each>. Current size: production <N>,
-tests <N>, spec <N>. Budget from the scope contract: <N> / <N> / <N>.
+tests <N>, spec <N>. Expected size from the scope contract: <N> / <N> / <N>.
 
 1. Pick 3–5 comparable merged changes from the project history. For each: user-visible scope in one
    line, production, test and spec lines, number of files.

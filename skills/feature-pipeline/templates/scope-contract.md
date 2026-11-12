@@ -2,6 +2,10 @@
 
 Written by the PM at intake, approved by the owner. Changes need a decision log entry.
 
+## Task
+
+In one sentence, in the owner's terms: <result>. Done when: <criterion>.
+
 ## Source
 
 - Issue(s): <links>
@@ -20,7 +24,7 @@ Only non-obvious exclusions and neighbours that are easy to confuse with the sco
 
 - <exclusion> — <why, or where it goes: a separate issue>
 
-## Size budget
+## Expected size
 
 From comparable merged changes (name them, with production / test / spec lines and the number of
 user-visible capabilities each one delivered).
@@ -30,10 +34,11 @@ user-visible capabilities each one delivered).
 | <comparable 1> | | | | |
 | <comparable 2> | | | | |
 
-Budget for this change: production <N>, tests <N>, spec <N>. A change that extends existing
-behaviour costs less per capability than one that builds it from nothing.
+Expected size of this change: production <N>, tests <N>, spec <N>. It is an estimate, not a limit.
+A change that extends existing behaviour costs less per capability than one that builds it from
+nothing.
 
 ## Rules
 
 - A defect found during the work that exists on the base branch goes to a separate issue and PR.
-- Over the budget, stop and simplify before going on.
+- Over the expected size, stop and simplify before going on.

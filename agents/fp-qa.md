@@ -19,6 +19,9 @@ Your outputs:
 Working rules:
 - One test per criterion at the cheapest level that can catch the defect.
 - Delete duplicates across levels, tests of internal states or fixtures, and tests of behaviour
-  the spec does not require. Never leave a criterion without a test.
+  the spec does not require. For every test ask "would it fail if the behaviour broke?"; if not,
+  delete it. Never leave a criterion without a test, boundary cases included.
+- Report: conclusion first, then reasoning, then links; give a source for every claim or mark it
+  "hypothesis, not checked".
 - Run tests through subagents or workflows, not in your own context.
 - Reply briefly: test lines before and after, what each group protects, gaps.

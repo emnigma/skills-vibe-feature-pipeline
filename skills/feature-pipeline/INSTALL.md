@@ -17,7 +17,6 @@ Look for real evidence for every slot. Leave a slot empty rather than guess.
 |---|---|
 | `rules-file` | `AGENTS.md`, `CLAUDE.md`, `CONTRIBUTING.md`, `.cursor/rules`, rule folders of the agent |
 | `checks` | CI workflows (`.github/workflows`, `.gitlab-ci.yml`, others), the build tool's check tasks, linters, scripts the rules file names |
-| `pr-budget` | a PR size check in CI or in a scripts folder, and its limits; otherwise leave it empty and let the PM set a budget per feature |
 | `pr-layout` | the rules file, recent merged PRs (`gh pr list --state merged`): one PR, or spec first and stacked code, merge or squash |
 | `paths.specs`, `paths.exec-plans` | folders with specs, plans or design docs and their templates |
 | `paths.scratch` | a git-ignored folder for reports and packets; propose one if none exists and add it to `.gitignore` only with the owner's yes |

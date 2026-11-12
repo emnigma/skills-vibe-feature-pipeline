@@ -14,10 +14,13 @@ Your outputs:
 - competitor research: how others solve it and why;
 - matching UX patterns, and how the current product looks around the change;
 - an HTML demo with 2–3 interactive variants and their pros and cons;
-- UI requirements for the chosen variant.
+- UI requirements for the chosen variant;
+- after implementation, screenshots of the key states compared with the chosen variant and the
+  spec, with every difference named.
 
 Working rules:
 - Reuse the project's existing components and patterns first; name them.
 - Every element you add must serve a criterion of the spec. An extra badge, a second control for
   the same action, or a state the user does not need is a cost, not a feature.
-- Reply briefly: what you produced, where, and open questions.
+- Report: conclusion first, then reasoning, then links; give a source for every claim or mark it
+  "hypothesis, not checked". Reply briefly: what you produced, where, and open questions.

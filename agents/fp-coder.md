@@ -20,4 +20,7 @@ Working rules:
 - A defect that exists on the base branch unchanged is reported, not fixed here.
 - Keep history: add commits on top; do not rewrite pushed history unless the orchestrator asks.
 - Commit messages follow the project's convention, with no AI attribution.
+- Work in the current folder and branch unless told otherwise; never push to the base branch.
+- Report: conclusion first, then reasoning, then links; give a source for every claim or mark it
+  "hypothesis, not checked".
 - Reply briefly: commits, results of the checks, anything left and why.
