@@ -1,16 +1,22 @@
 # Profile format
 
 The profile is `feature-pipeline.md` in the configuration folder the agent reads in the project
-(`<config>/feature-pipeline.md`). It is committed with
-the project, so the project's specifics stay in the project. YAML front matter holds the slots;
-the Markdown body may add free-form notes for the roles.
+(`<config>/feature-pipeline.md`). YAML front matter holds the slots; the Markdown body may add
+free-form notes for the roles. The project's specifics stay in the project, never in the plugin.
+
+Two ways to keep it:
+
+- **Team profile:** committed with the project; every member gets it.
+- **Personal profile:** one file outside the project, linked into each checkout (every worktree
+  of the repository) as a git-ignored `<config>/feature-pipeline.md`. Use it when the team does
+  not use the pipeline. Check that the config folder is git-ignored before linking.
 
 ## Slots
 
 | Slot | Required | Meaning |
 |---|---|---|
 | `rules-file` | yes | The project rules every role reads first. |
-| `checks` | yes | Commands that must pass before a commit and before a PR. |
+| `checks` | yes | Commands that must pass before a commit. A command whose script a branch does not have yet is skipped with a warning. |
 | `pr-layout` | yes | How the work becomes PRs, for example `single`, or `spec-then-code` (a spec PR and a code PR stacked on it). |
 | `paths.specs` | yes | Where specs live, with the template if there is one. |
 | `paths.exec-plans` | no | Where plans and design notes live. |

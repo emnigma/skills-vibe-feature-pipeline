@@ -68,10 +68,13 @@ Files next to this one:
 1. Find the profile: `feature-pipeline.md` in the configuration folder the agent reads in this
    project (its agent documentation names it). If it is missing, follow `INSTALL.md`, show the
    draft to the owner, and continue only after approval.
-2. On every run, check the profile against the environment: every skill it names exists, every
-   command it names runs (`--help` or a dry run is enough), every path exists. If a required entry
-   is missing, stop and name what is missing. An empty optional slot gives one warning per run, and
-   the stage that uses it runs without it.
+2. On every run, check the profile against this checkout: every skill it names is visible to the
+   agent here, every path exists, and the executable or script of every command exists. Do not run
+   the commands for the check: not every script accepts `--help`. If a required entry is missing,
+   stop and name what is missing. A missing skill of an optional slot, or a check whose script this
+   branch does not have yet, gives one warning per run, and the stage runs without it.
+3. Skills of the plugin win no name clash: a project or user skill with the same name disables
+   both. If one exists, stop and ask the owner to remove or rename the local copy.
 
 ## Stages
 
