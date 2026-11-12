@@ -1,0 +1,8 @@
+{
+  "$schema": "https://marketplace.veai.ru/schema/plugin-manifest.schema.json",
+  "schemaVersion": 1,
+  "version": "0.1.0",
+  "name": "Feature Pipeline",
+  "description": "Role-based feature delivery pipeline (PM, designer, architect, coder, QA, review) with owner decision points and scope and size guards, configured per project by a profile.",
+  "license": "MIT AND Apache-2.0"
+}

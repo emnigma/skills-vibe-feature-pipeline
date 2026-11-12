@@ -1,0 +1,9 @@
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*~
+.lake/
+build/
+lake-packages/
+__pycache__/
